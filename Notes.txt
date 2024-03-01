@@ -1,0 +1,29 @@
+https://stackoverflow.com/questions/60296873/sessionnotcreatedexception-message-session-not-created-this-version-of-chrome
+`pip install webdriver-manager`
+`pip install selenium`
+
+from selenium import webdriver
+`chrome_options = webdriver.ChromeOptions()`
+
+driver = webdriver.Chrome(`chrome_options` )
+
+chrome_options.add_argument('--disable-gpu')
+
+chrome_options.add_argument('--headless')
+
+driver = webdriver.Chrome(chrome_options )
+
+https://selenium-python.readthedocs.io/locating-elements.html
+
+```
+find_element(By.CLASS_NAME, "class name")
+find_element(By.CSS_SELECTOR, "css selector")
+```
+
+section.css-2u323:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)
+
+section.css-2u323:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)
+
+/html/body/div[1]/div/div[4]/main/div[2]/div/div/div/div[2]/div[2]/span[4]/div/div/section/div/div[1]/div/div/div/a
+
+<a class="css-g3jcms" aria-label="Free Games, 1 of 2, Free Now, Super Meat Boy Forever, Free Now - Feb 29 at 05:00 PM, 552000" href="/en-US/p/super-meat-boy-forever"><div class="css-914cl7"><div class="css-eix8c6"><div class="css-1ihd7u3" data-testid="offer-card-image-landscape"><div class="css-rl9sa6"><div class="css-uwwqev"><div class="css-uwwqev" data-testid="picture"><img alt="Super Meat Boy Forever" src="https://cdn1.epicgames.com/moose/offer/EGS_SuperMeatBoyForever_TeamMeat_S1-2560x1440-76f57fe5321b054665441ce21231961e.jpg?h=480&amp;quality=medium&amp;resize=1&amp;w=854" class="css-1dsjpsr" data-image="https://cdn1.epicgames.com/moose/offer/EGS_SuperMeatBoyForever_TeamMeat_S1-2560x1440-76f57fe5321b054665441ce21231961e.jpg?h=480&amp;quality=medium&amp;resize=1&amp;w=854" data-testid="picture-image"></div></div></div></div><div class="css-1magkk1"><div class="css-1avc5a3"><div class="css-11xvn05"><span>Free Now</span></div></div></div></div><div class="css-1a6kj04"><div class="css-tr0r3x"><div class="css-s98few"><span class="css-119zqif">Super Meat Boy Forever</span></div><div class="css-y2j3ic"><span>Free Now - <time datetime="2024-02-29T16:00:00.000Z">Feb 29</time> at <time datetime="2024-02-29T16:00:00.000Z">05:00 PM</time></span></div></div></div></div></a>
